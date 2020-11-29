@@ -12,6 +12,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout'
+    @session = item 
     erb :checkout
   end
 
